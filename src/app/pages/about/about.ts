@@ -10,8 +10,8 @@ import { PopoverPage } from '../about-popover/about-popover';
   styleUrls: ['./about.scss'],
 })
 export class AboutPage {
-  location = 'madison';
-  conferenceDate = '2047-05-17';
+  location = 'sanford';
+  conferenceDate = '2023-10-14';
 
   selectOptions = {
     header: 'Select a Location'
