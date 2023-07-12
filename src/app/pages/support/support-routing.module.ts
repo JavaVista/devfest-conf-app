@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { SupportPage } from './support';
+import { LeavePageGuard } from '../../guards/leave-page.guard';
 
 const routes: Routes = [
   {
     path: '',
-    component: SupportPage
+    component: SupportPage,
+    canDeactivate: [LeavePageGuard]
   }
 ];
 
